@@ -1,0 +1,149 @@
+#slot-machine {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:  0;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-family: 'Arial', sans-serif; 
+
+}
+
+button {
+    font-family: Arial, sans-serif; /* フォントを変更 */
+    color: #ffffff; /* テキストの色を白に設定 */
+    background-color: #ff4500; /* ボタンの背景色を青に設定 */
+    border: none;
+    padding: 5px 10px; /* ボタン内のテキストとボタンの境界とのスペースを設定 */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px; /* ボタンの角を丸くする */
+    margin: 0 6px;
+}
+
+button:hover {
+    background-color: #0046d5; /* マウスが上にあるときの背景色を濃い青に設定 */
+    color: #f1f1f1; /* マウスが上にあるときのテキストの色を設定 */
+}
+
+.slot {
+    width: 230px;
+    height: 100px;
+    border: 3px solid #ff4500;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 2em;
+}
+
+#slot-machine {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 2em; 
+}
+
+#spin {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 70px;  /* 幅と高さを同じに設定 */
+    height: 70px;  /* 幅と高さを同じに設定 */
+    border-radius: 50%;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    line-height: 70px;
+}
+
+#addName {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 50px;  /* 幅と高さを同じに設定 */
+    border-radius: 50%;
+    height: 50px; /* heightをautoに設定 */
+    line-height: 1em; /* line-heightを追加 */
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#nameInput {
+    margin-top: 30px;
+    width: 100px;  
+    height: 30px;  
+}
+
+#nameList {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: rgb(190, 190, 190);/* 背景色を設定 */
+    padding: 20px; /* リストと背景の間にスペースを設定 */
+    border-radius: 10px; /* 角を丸くする */
+    font-weight: bold;
+}
+
+
+#spin:hover {
+    background-color: rgb(255, 169, 111);
+    color: black;
+}
+
+#spin:active ~ #slot-machine .slot {
+    transform: scale(1.1);
+}
+
+#addName:hover {
+    background-color: rgb(255, 169, 111);
+    color: black;
+}
+
+
+
+#nameList {
+    text-align: left; 
+    margin-left: 10px;
+    align-self: flex-start;
+}
+
+#inputArea {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#confirmEdit {
+    margin-left: 10px;
+}
